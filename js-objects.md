@@ -68,3 +68,40 @@ var jane = Object.create(personProto);
     yearOfBirth: { value: 1992 };
     job: { value: 'designer' }; 
 }
+```
+## Primitives vs Objects
+- Variables associated with objects do not actually contain the object.
+- They contian a reference to the place in memory where the object sits, where the object is stored.
+- Variable just points to the object
+
+``` javascript
+var a = 23;
+var b = a;
+a = 46;
+console.log(a) //46
+console.log(b) //23
+
+var obj1 = {
+    name: 'john'
+    age: 26
+};
+var obj2 = obj1;
+obj1.age = 30;
+console.log(obj1.age); //30
+console.log(obj2.age); //30
+
+var age = 27;
+var obj = {
+    name: 'Jonas'
+    city: 'lisbon'
+};
+
+function change(a, b){
+    a = 30;
+    b.city = 'SF'
+}
+
+change(age, obj);
+console.log(age); //27
+console.log(obj.city); //SF
+```
