@@ -49,3 +49,22 @@ var age = john.calculateAge();
 john.age = age;
 console.log(john)
 ```
+## Object.create
+``` javascript
+var personProto = {
+    calculateAge: function() {
+        console.log(2017-this.yearOfBirth);
+    }
+};
+
+var daniel = Object.create(personProto);
+daniel.name = 'John'
+daniel.yearOfBirth = 1992;
+daniel.job = 'CEO'
+
+var jane = Object.create(personProto);
+{
+    name: { value: 'Jane' },
+    yearOfBirth: { value: 1992 };
+    job: { value: 'designer' }; 
+}
