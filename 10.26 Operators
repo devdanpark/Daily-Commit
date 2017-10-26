@@ -1,0 +1,38 @@
+# Conditional Operator '?'
+
+``` javascript
+var x = 80;
+console.log((x > 70) ? 'OK' : 'NO');
+// OUTPUT : YES
+```
+
+# Logical Operator
+- In Javascript, those values below are implicitely accepted as false.
+  - " "
+  - 0, NaN(Not a Number)
+  - null, undefined
+
+- Except those values, other values are accepted as 'true'
+
+## Other Operators
+- comma
+- delete : remove property of an object or an array
+``` javascript
+var obj = {x:1, y:2}
+console.log(delete.obj.x) // true
+console.log(obj.x) //undefined
+```
+- instanceof : judging whether the object is an instance of assigned class.
+- new : create a new instance
+- typeof : get the data type of the operand
+``` javascript
+var num = 1;
+console.log(typeof num) // number
+
+var str = 'Hello'
+console.log(typeof str) //string
+
+var flag = true;
+console.log(typeof flag) //boolean
+```
+- void : retrieve an undecided value.
