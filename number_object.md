@@ -18,3 +18,5 @@
 - toFiexed(dec): Formats a number with dec numbers of digits after the decimal point.
 - toString(rad): Converts a number to a string.
 - valueOf(): Returns the primitive value of a number.
+- parseFloat(str): switch string to decimals.
+- parseInt(str [,radix]): switch string to an integer
