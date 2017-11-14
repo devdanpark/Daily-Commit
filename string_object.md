@@ -39,3 +39,4 @@
 - trim(): Removes whitespace from both ends of a string
 - length(): Returns the length of a string
 
+* some part of the information that I used "w3schools.com"
